@@ -28,4 +28,4 @@ You should create one R script called run_analysis.R that does the following.
 - - -
 
 ### Script Explanation
-test
+The work for this project is contained in the R script file `run_analysis.R`.
