@@ -17,3 +17,18 @@ For each record in the dataset it is provided:
 * A 561-feature vector with time and frequency domain variables.
 * Its activity label.
 * An identifier of the subject who carried out the experiment.
+
+### Text files
+The dataset includes the following:
+
+* 'README.txt': self-explanatory
+* 'activity_labels.txt': link between the class labels and respective activity name.
+* 'features_info.txt': information about the variables used on the feature vector.
+* 'features.txt': list of all features.
+* 'train/X_train.txt': training dataset.
+* 'train/y_train.txt': training dataset labels.
+* 'test/X_test.txt': test dataset.
+* 'test/y_test.txt': test dataset labels.
+* 'train/subject_train.txt': Each row identifies the subject who performed the activity for each sample (range is from 1 to 30).
+
+Note: Features are normalized and bounded within [-1,1]. Each feature vector is a row on the text file.
