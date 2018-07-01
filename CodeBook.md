@@ -32,3 +32,13 @@ The dataset includes the following:
 * 'train/subject_train.txt': Each row identifies the subject who performed the activity for each sample (range is from 1 to 30).
 
 Note: Features are normalized and bounded within [-1,1]. Each feature vector is a row on the text file.
+
+### Variables
+The merged dataset created (called `Data` in the script) contains 66 columns with provided variable data and two columns of "forced" data.  These last two columns are denoted `subject` and `activity`.  The former refers to human subjects numbered 1 to 30; the latter refers to the physical activity that the subject was monitored during participation.  Activity includes the following possible levels:
+
+* `WALKING`
+* `WALKING_UPSTAIRS`
+* `WALKING_DOWNSTAIRS`
+* `SITTING`
+* `STANDING`
+* `LAYING`
