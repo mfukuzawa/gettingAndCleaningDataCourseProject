@@ -28,4 +28,4 @@ You should create one R script called run_analysis.R that does the following.
 - - -
 
 ### Script Explanation
-The work for this project is contained in the R script file `run_analysis.R`.
+The work for this project is contained in the R script file `run_analysis.R`.  Note that in my initial code, I chose to download the data set locally versus the `download.file` option.  Then each of the text files are saved to a variable with the `read.table` function.
