@@ -29,3 +29,13 @@ You should create one R script called run_analysis.R that does the following.
 
 ### Script Explanation
 The work for this project is contained in the R script file `run_analysis.R`.  Note that in my initial code, I chose to download the data set locally versus the `download.file` option.  Then each of the text files are saved to a variable with the `read.table` function.
+
+The script is somewhat divided into sections according to the instructions. The various text files are merged pairwise before a comprehensive merge, i.e. the 'x' and 'y' datasets are merged together as well as the 'subject' text files, before the eventual merge of all.
+
+The next section of the script finds the columns that relate to a mean and standard deviation; had to look at the `features.txt` file to find the exact locations for these columns.  We then create a subset of the merged dataset to contain these columns with means and standard deviations.
+
+We then examine one of our new columns in the subset that relates to a physical activity, only the columns entries are numerically coded 1-6.  We change this so that the entries are read according to their factor level, e.g. "WALKING", "STANDING", etc.
+
+The next step is to clean up some of the columns in the subset so that ambiguities are removed, e.g. 't' changes to 'time'.  You can see that I have done this one by one.
+
+The final step is to create the second independent tidy dataset that is written as `tidy_data.txt`.
