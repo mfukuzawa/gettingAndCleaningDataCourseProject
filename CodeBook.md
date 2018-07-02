@@ -43,7 +43,7 @@ The merged dataset created (called `Data` in the script) contains 66 columns wit
 * `STANDING`
 * `LAYING`
 
-The other variables are split between time and frequency domains.
+The other variables are split between time and frequency domains. The units for time are in seconds while units for frequency are in Hz.
 
 #### Time
 
@@ -116,3 +116,12 @@ The other variables are split between time and frequency domains.
 * `frequencyBodyGyroscopeMagnitude-std()`         
 * `frequencyBodyGyroscopeJerkMagnitude-mean()`
 * `frequencyBodyGyroscopeJerkMagnitude-std()`
+
+### Transformations
+In order to complete the assignment, several steps were completed to the original dataset.
+
+* Merge training and test datasets.
+* Extract measurements concerning means and standard deviations. Note that for this data, this includes variables with `mean()` and `std()`. A simple subset operation was performed to extract these.
+* Change the activity labels (coded 1 through 6) to their descriptive names.
+* Edit variable names with ambiguous meanings to a readable format. The notable changes included: 't' for time; 'f' for frequency; 'Acc' for Accelerometer; 'Gyro' to Gyroscope; 'Mag' to Magnitude; 'BodyBody' to Body. These changes were accomplished with the `gsub` function. Note, `std()` was not changed because it is assumed that this is a common abbreviation for standard deviation.
+* Average each variable by subject and activity. This was accomplished with the `aggregate` function, which is an easy way to apply a mathematical operation (mean) to all of the variables by subject and activity.
